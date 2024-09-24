@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+/* Ensure the side navigation stays fixed */
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 16.6667%; /* Adjust this width as needed */
+  overflow: hidden; /* Hides any overflow content in the side-nav */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* The main content area takes the rest of the space */
+.main-content {
+  margin-left: 16.6667%; /* This should match the width of the side-nav */
+  padding: 20px; /* Optional: add some padding */
+  height: 100vh; /* Full viewport height */
+  overflow-y: scroll; /* Allows vertical scrolling */
+  overflow-x: hidden; /* Hides horizontal scrollbars */
+  /* flex: 1; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Optional: Adjust the layout as needed */
+.row {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Hide scrollbars globally if needed */
+html, body {
+  overflow-x: hidden; /* Prevent horizontal scrolling on the entire page */
+
+  /* height: 100%;
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; */
 }
 
-.App-link {
-  color: #61dafb;
+div#Dashboard {
+  margin-left: 3%;
+  width: 80%;
+  
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div#Headernav {
+  margin-left: -0.2%;
+  margin-top: -2%;
+  
+  
+  
 }
+
+
+
+
+ 
+
